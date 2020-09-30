@@ -76,18 +76,11 @@ class NavigationBar extends Component {
             </div>
             {/* <!-- /.navbar-static-side --> */}
         </nav>
-        <div id="page-wrapper">
-            <div className="row">
-
-                <script src="/Scripts/datetimepicker/jquery-1.12.4.js"></script>
         
-                <script src="/Scripts/jquery.validate.min.js"></script>
-                <script src="/Scripts/jquery.validate.unobtrusive.min.js"></script>
-                <script src="/Scripts/datetimepicker/jqueryui.js"></script>
-                <script src="/Template/vendor/bootstrap/js/bootstrap.min.js"></script>
-                <script src="/Scripts/datetimexdsoft/build/jquery.datetimepicker.full.min.js"></script>
 
-                </div></div></div></div>
+
+        
+                </div></div>
 
         )
     }

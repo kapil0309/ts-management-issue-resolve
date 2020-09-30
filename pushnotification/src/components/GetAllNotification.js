@@ -12,7 +12,7 @@ class getAllNotification extends Component {
     }
   }
   async getNotifications() {
-    const res = await axios.get('http://ts-notification-service-taskeen-dev.appdev-cloudnative-ocp43-6fb0b86391cd68c8282858623a1dddff-0000.eu-gb.containers.appdomain.cloud/api/Notification/getAllNotifications')
+    const res = await axios.get('http://notification-service-git-test-taskeen-dev.appdev-cloudnative-ocp43-6fb0b86391cd68c8282858623a1dddff-0000.eu-gb.containers.appdomain.cloud/api/Notification/getAllNotifications')
     //console.log(res.data)
     this.setState({ loading: false, notifications: res.data })
   }
@@ -46,10 +46,14 @@ class getAllNotification extends Component {
     }
     ]
     return (
+      <div id="page-wrapper">
+        <div className="row">
       <ReactTable
         data={this.state.notifications}
         columns={columns}
       />
+      </div>
+      </div>
     )
   }
 }

@@ -57,7 +57,9 @@ class PushNotification extends Component{
 
     render(){
         return(
-            <div>
+
+            <div id="page-wrapper">
+                <div className="row">
             
 
 <form onSubmit = {this.handlesubmit}>
@@ -107,6 +109,7 @@ class PushNotification extends Component{
     </div>
 </form>
 
+            </div>
             </div>
            
 
